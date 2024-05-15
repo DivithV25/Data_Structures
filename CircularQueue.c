@@ -16,13 +16,13 @@ int main()
     int ch, value;
     while (1)
     {
-        printf("\nenter the operation to be performed\n");
+        printf("\nEnter the operation to be performed:\n");
         printf("1.insert\n2.delete\n3.display\n");
         scanf("%d", &ch);
         switch (ch)
         {
  case 1:
-            printf("enter the value to be inserted:\n");
+            printf("\nEnter the value to be inserted:\n");
             scanf("%d", &value);
             insert(value);
             break;
@@ -55,12 +55,12 @@ void delete()
 {
     if (front == -1)
     {
-        printf("empty");
+        printf("Empty");
         return;
     }
     else
     {
-        printf("the value that is deleted is %d\n", queue[front].data);
+        printf("The value that is deleted is %d\n", queue[front].data);
         front = (front + 1) % MAX;
     }
 }
@@ -68,7 +68,7 @@ void display()
 {
     if (front == -1)
     {
-        printf("empty bro\n");
+        printf("Empty \n");
     }
     else
     {
